@@ -1,0 +1,24 @@
+In these documents presented the description of classes the clustering algorithm for i\-R\-P\-C implement for C\-M\-S\-S\-W.
+
+\subsection*{How to use}
+
+``` // 1) Fill these containers from raw data. i\-R\-P\-C\-Hit\-Container hr, lr;
+
+// 2) Clustering for H\-R and L\-R separate. i\-R\-P\-C\-Cluster\-Container chr, clr; std\-::thread thr (\&i\-R\-P\-C\-Clusterizer\-::clustering, this, info.\-thr\-Time\-H\-R(), std\-::ref(hhr), std\-::ref(chr)); std\-::thread tlr (\&i\-R\-P\-C\-Clusterizer\-::clustering, this, info.\-thr\-Time\-L\-R(), std\-::ref(hlr), std\-::ref(clr));
+
+thr.\-join(); tlr.\-join(); hlr.\-clear(); hhr.\-clear();
+
+// 3) Compute clustersi (H\-R) parameters. for(auto cl = chr.\-begin(); cl != chr.\-end(); ++cl) cl-\/$>$compute(std\-::ref(info)); // 4) Compute clusters (L\-R) parameters. for(auto cl = clr.\-begin(); cl != clr.\-end(); ++cl) cl-\/$>$compute(std\-::ref(info));
+
+// 5) Association between H\-R and L\-R. i\-R\-P\-C\-Cluster\-Container clusters = association(info.\-is\-A\-N\-D(), info.\-thr\-Delta\-Time\-Min(), info.\-thr\-Delta\-Time\-Max(), chr, clr); chr.\-clear(); clr.\-clear();
+
+// 6) Compute clusters parameters. for(auto cl = clusters.\-begin(); cl != clusters.\-end(); ++cl) cl-\/$>$compute(std\-::ref(info)); ``` \subsection*{Any questions}
+
+Ph\-D-\/student, Shchablo Konstantin \par
+ Institute of Nuclear physics of Lyon \par
+ (Bâtiment Paul Dirac 4, Rue Enrico Fermi 69622 Villeurbanne Cedex, France) \par
+ \href{mailto:shchablo@ipnl.in2p3.fr}{\tt shchablo@ipnl.\-in2p3.\-fr} or \href{mailto:shchablo@gmail.com}{\tt shchablo@gmail.\-com}
+
+\subsection*{License}
+
+G\-N\-U Lesser General Public License v3.\-0 
