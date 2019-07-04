@@ -1,0 +1,460 @@
+\hypertarget{classiRPCCluster}{\section{i\-R\-P\-C\-Cluster Class Reference}
+\label{classiRPCCluster}\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}}
+}
+
+
+This class defines a cluster for improved Resistive Plate Chamber (i\-R\-P\-C).  
+
+
+
+
+{\ttfamily \#include $<$i\-R\-P\-C\-Cluster.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classiRPCCluster_a08fe677fed4795406629b2ff232fc813}{\hyperlink{classiRPCCluster_a08fe677fed4795406629b2ff232fc813}{i\-R\-P\-C\-Cluster} ()}\label{classiRPCCluster_a08fe677fed4795406629b2ff232fc813}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classiRPCCluster_a6d3b8a059541bb23098588f3dc9cfac1}{i\-R\-P\-C\-Cluster} (int \hyperlink{classiRPCCluster_a4834badf4c95d5b152da4dbe8f07d5fa}{bx})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classiRPCCluster_a3fe74630f7e0d769be2d47961362c42e}{\hyperlink{classiRPCCluster_a3fe74630f7e0d769be2d47961362c42e}{$\sim$i\-R\-P\-C\-Cluster} ()}\label{classiRPCCluster_a3fe74630f7e0d769be2d47961362c42e}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classiRPCCluster_a4834badf4c95d5b152da4dbe8f07d5fa}{bx} ()
+\begin{DoxyCompactList}\small\item\em Return bunchx. \end{DoxyCompactList}\item 
+void \hyperlink{classiRPCCluster_af70b6a4bdbc3b7a54942d37674ec287a}{set\-Bx} (int \hyperlink{classiRPCCluster_a4834badf4c95d5b152da4dbe8f07d5fa}{bx})
+\begin{DoxyCompactList}\small\item\em Set bunchx information. \end{DoxyCompactList}\item 
+int \hyperlink{classiRPCCluster_ae8b882099668a3a1e5897d76d31688a7}{first\-Strip} ()
+\begin{DoxyCompactList}\small\item\em Return the first (order to the map) strip of the cluster which was fired at least from one side. \end{DoxyCompactList}\item 
+int \hyperlink{classiRPCCluster_a2754db57fbc0dd00a55e1d0a08c91409}{last\-Strip} ()
+\begin{DoxyCompactList}\small\item\em The last (order to the map) strip of the cluster which was fired at least from one side. \end{DoxyCompactList}\item 
+int \hyperlink{classiRPCCluster_ac10aac226b3fc257e67de8926d8954f0}{cluster\-Size} ()
+\begin{DoxyCompactList}\small\item\em Calculate the cluster size of cluster. \end{DoxyCompactList}\item 
+bool \hyperlink{classiRPCCluster_a9c7a53ff4a4b5b4657a80250d068fa38}{has\-High\-Time} ()
+\begin{DoxyCompactList}\small\item\em Check of the existing information of high time. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_a73d1da17903beba8cb7d3081adc681c4}{high\-Time} ()
+\begin{DoxyCompactList}\small\item\em Return the average time from high radius of the chamber. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_a9f3eee70a69b08c0b78b5261cc6e1428}{high\-Time\-R\-M\-S} ()
+\begin{DoxyCompactList}\small\item\em Calculate the root means squere of time from high radius of the chamber. \end{DoxyCompactList}\item 
+bool \hyperlink{classiRPCCluster_a85a3586b066bf59b09cf2efe04ff75e0}{has\-Low\-Time} ()
+\begin{DoxyCompactList}\small\item\em Check of the existing information of low time. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_a6bed3bb49e702b428970e8d87c2e67ca}{low\-Time} ()
+\begin{DoxyCompactList}\small\item\em Return the average time from low radius of the chamber. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_afa7d1bfcb0d6fd03775a6c7d2668e458}{low\-Time\-R\-M\-S} ()
+\begin{DoxyCompactList}\small\item\em Calculate the root means squere of time from low radius of the chamber. \end{DoxyCompactList}\item 
+bool \hyperlink{classiRPCCluster_aa4db7757b34dde34e9e1682770d1bb9b}{has\-Delta\-Time} ()
+\begin{DoxyCompactList}\small\item\em Check of the existing information of delta time. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_a138f7020eb72095167736f274c12fe22}{delta\-Time} ()
+\begin{DoxyCompactList}\small\item\em Return the different averege times between two ends of the chamber. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_a8df0ed88437ad09aab37dc2175bbc734}{delta\-Time\-R\-M\-S} ()
+\begin{DoxyCompactList}\small\item\em Calculate the root means square (R\-M\-S) of differences times between two ends of the chamber. \end{DoxyCompactList}\item 
+bool \hyperlink{classiRPCCluster_a3f38de656da42d2578bf0843d96e9d63}{has\-Y} ()
+\begin{DoxyCompactList}\small\item\em Check of the existing information of position along-\/strip. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_affb568c6f787e806345d89b03bbebe5d}{y} ()
+\begin{DoxyCompactList}\small\item\em Calculate the y position. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_ac7bed0a750f90d9176adf4a8281bca81}{y\-R\-M\-S} ()
+\begin{DoxyCompactList}\small\item\em Calculate the root means square (R\-M\-S) of y position. \end{DoxyCompactList}\item 
+bool \hyperlink{classiRPCCluster_af71fe5ff47681a8802eb9bb7a913b171}{has\-X} ()
+\begin{DoxyCompactList}\small\item\em Check of the existing information of strip position. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_aaaecb51b27bc79ce07ee51ab4d47ef26}{x} ()
+\begin{DoxyCompactList}\small\item\em Calculate the strip position (x). \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCCluster_a8f1a80aa786afa5abc5a403a2a9c4533}{x\-D} ()
+\begin{DoxyCompactList}\small\item\em Calculate the dispersion of x position. \end{DoxyCompactList}\item 
+i\-R\-P\-C\-Hit\-Container $\ast$ \hyperlink{classiRPCCluster_a6702468c4a9549ea251436da07c4ce6e}{hits} ()
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the hit container. \end{DoxyCompactList}\item 
+void \hyperlink{classiRPCCluster_a9092779c220e200a5675bbd31f733620}{compute} (\hyperlink{classiRPCInfo}{i\-R\-P\-C\-Info} \&info)
+\begin{DoxyCompactList}\small\item\em Compute all parametors of cluster. \end{DoxyCompactList}\item 
+void \hyperlink{classiRPCCluster_a45572a853771dd02eceef89ebff2736e}{initialize} (\hyperlink{classiRPCCluster}{i\-R\-P\-C\-Cluster} \&hr, \hyperlink{classiRPCCluster}{i\-R\-P\-C\-Cluster} \&lr)
+\begin{DoxyCompactList}\small\item\em Fills the cluster and calculates important parameters for cluster algorithms. \end{DoxyCompactList}\item 
+void \hyperlink{classiRPCCluster_a65a5d6e160187ba19cefb370983dd397}{add\-Hit} (\hyperlink{classiRPCHit}{i\-R\-P\-C\-Hit} \&hit)
+\begin{DoxyCompactList}\small\item\em Add hit to the container of the cluster and calculates important parameters for cluster algorithms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines a cluster for improved Resistive Plate Chamber (i\-R\-P\-C). 
+
+\begin{DoxyAuthor}{Author}
+Shchablo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 2019 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classiRPCCluster_a6d3b8a059541bb23098588f3dc9cfac1}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}}
+\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{i\-R\-P\-C\-Cluster}]{\setlength{\rightskip}{0pt plus 5cm}i\-R\-P\-C\-Cluster\-::i\-R\-P\-C\-Cluster (
+\begin{DoxyParamCaption}
+\item[{int}]{bx}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a6d3b8a059541bb23098588f3dc9cfac1}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bx} & -\/ bunchx. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classiRPCCluster_a65a5d6e160187ba19cefb370983dd397}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!add\-Hit@{add\-Hit}}
+\index{add\-Hit@{add\-Hit}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{add\-Hit}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Cluster\-::add\-Hit (
+\begin{DoxyParamCaption}
+\item[{{\bf i\-R\-P\-C\-Hit} \&}]{hit}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a65a5d6e160187ba19cefb370983dd397}
+
+
+Add hit to the container of the cluster and calculates important parameters for cluster algorithms. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hit} & -\/ signle hit (\hyperlink{classiRPCHit}{i\-R\-P\-C\-Hit}) from raw data. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classiRPCCluster_a4834badf4c95d5b152da4dbe8f07d5fa}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!bx@{bx}}
+\index{bx@{bx}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{bx}]{\setlength{\rightskip}{0pt plus 5cm}int i\-R\-P\-C\-Cluster\-::bx (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a4834badf4c95d5b152da4dbe8f07d5fa}
+
+
+Return bunchx. 
+
+\begin{DoxyReturn}{Returns}
+bunchx. 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_ac10aac226b3fc257e67de8926d8954f0}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!cluster\-Size@{cluster\-Size}}
+\index{cluster\-Size@{cluster\-Size}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{cluster\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int i\-R\-P\-C\-Cluster\-::cluster\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_ac10aac226b3fc257e67de8926d8954f0}
+
+
+Calculate the cluster size of cluster. 
+
+\begin{DoxyReturn}{Returns}
+The number of strips which were fired at least from one side. 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a9092779c220e200a5675bbd31f733620}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!compute@{compute}}
+\index{compute@{compute}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{compute}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Cluster\-::compute (
+\begin{DoxyParamCaption}
+\item[{{\bf i\-R\-P\-C\-Info} \&}]{info}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a9092779c220e200a5675bbd31f733620}
+
+
+Compute all parametors of cluster. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em info} & -\/ All parameters for compute cluster. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classiRPCCluster_a138f7020eb72095167736f274c12fe22}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!delta\-Time@{delta\-Time}}
+\index{delta\-Time@{delta\-Time}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{delta\-Time}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::delta\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a138f7020eb72095167736f274c12fe22}
+
+
+Return the different averege times between two ends of the chamber. 
+
+\begin{DoxyReturn}{Returns}
+$DT=HT-LT=\frac{1}{n}\sum_{i=1}^nht_i-\frac{1}{n}\sum_{i=1}^nlt_i$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a8df0ed88437ad09aab37dc2175bbc734}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!delta\-Time\-R\-M\-S@{delta\-Time\-R\-M\-S}}
+\index{delta\-Time\-R\-M\-S@{delta\-Time\-R\-M\-S}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{delta\-Time\-R\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::delta\-Time\-R\-M\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a8df0ed88437ad09aab37dc2175bbc734}
+
+
+Calculate the root means square (R\-M\-S) of differences times between two ends of the chamber. 
+
+\begin{DoxyReturn}{Returns}
+$DT_{RMS}=\sqrt{\frac{dt_1^2+dt_2^2+\ldots+dt_n^2}{n}}$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_ae8b882099668a3a1e5897d76d31688a7}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!first\-Strip@{first\-Strip}}
+\index{first\-Strip@{first\-Strip}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{first\-Strip}]{\setlength{\rightskip}{0pt plus 5cm}int i\-R\-P\-C\-Cluster\-::first\-Strip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_ae8b882099668a3a1e5897d76d31688a7}
+
+
+Return the first (order to the map) strip of the cluster which was fired at least from one side. 
+
+\begin{DoxyReturn}{Returns}
+First strip of the cluster according to the mapping of strips. 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_aa4db7757b34dde34e9e1682770d1bb9b}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!has\-Delta\-Time@{has\-Delta\-Time}}
+\index{has\-Delta\-Time@{has\-Delta\-Time}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{has\-Delta\-Time}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Cluster\-::has\-Delta\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_aa4db7757b34dde34e9e1682770d1bb9b}
+
+
+Check of the existing information of delta time. 
+
+\begin{DoxyReturn}{Returns}
+$if(nDeltaTime<=0) \ than \ false$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a9c7a53ff4a4b5b4657a80250d068fa38}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!has\-High\-Time@{has\-High\-Time}}
+\index{has\-High\-Time@{has\-High\-Time}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{has\-High\-Time}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Cluster\-::has\-High\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a9c7a53ff4a4b5b4657a80250d068fa38}
+
+
+Check of the existing information of high time. 
+
+\begin{DoxyReturn}{Returns}
+$if(nHighTime<=0) \ than \ false$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a85a3586b066bf59b09cf2efe04ff75e0}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!has\-Low\-Time@{has\-Low\-Time}}
+\index{has\-Low\-Time@{has\-Low\-Time}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{has\-Low\-Time}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Cluster\-::has\-Low\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a85a3586b066bf59b09cf2efe04ff75e0}
+
+
+Check of the existing information of low time. 
+
+\begin{DoxyReturn}{Returns}
+$if(nLowTime<=0) \ than \ false$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_af71fe5ff47681a8802eb9bb7a913b171}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!has\-X@{has\-X}}
+\index{has\-X@{has\-X}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{has\-X}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Cluster\-::has\-X (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_af71fe5ff47681a8802eb9bb7a913b171}
+
+
+Check of the existing information of strip position. 
+
+\begin{DoxyReturn}{Returns}
+$if(fstrip==-1 \ || \ lstrip==-1) \ than \ false$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a3f38de656da42d2578bf0843d96e9d63}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!has\-Y@{has\-Y}}
+\index{has\-Y@{has\-Y}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{has\-Y}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Cluster\-::has\-Y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a3f38de656da42d2578bf0843d96e9d63}
+
+
+Check of the existing information of position along-\/strip. 
+
+\begin{DoxyReturn}{Returns}
+$if(nY<=0) \ than \ false$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a73d1da17903beba8cb7d3081adc681c4}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!high\-Time@{high\-Time}}
+\index{high\-Time@{high\-Time}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{high\-Time}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::high\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a73d1da17903beba8cb7d3081adc681c4}
+
+
+Return the average time from high radius of the chamber. 
+
+\begin{DoxyReturn}{Returns}
+$HT=\frac{1}{n}\sum_{i=1}^nht_i=\frac{ht_1+ht_2+\cdots+ht_n}{n}$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a9f3eee70a69b08c0b78b5261cc6e1428}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!high\-Time\-R\-M\-S@{high\-Time\-R\-M\-S}}
+\index{high\-Time\-R\-M\-S@{high\-Time\-R\-M\-S}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{high\-Time\-R\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::high\-Time\-R\-M\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a9f3eee70a69b08c0b78b5261cc6e1428}
+
+
+Calculate the root means squere of time from high radius of the chamber. 
+
+\begin{DoxyReturn}{Returns}
+$HT_{RMS}=\sqrt{\frac{ht_1^2+ht_2^2+\ldots+ht_n^2}{n}}$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a6702468c4a9549ea251436da07c4ce6e}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!hits@{hits}}
+\index{hits@{hits}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{hits}]{\setlength{\rightskip}{0pt plus 5cm}i\-R\-P\-C\-Hit\-Container $\ast$ i\-R\-P\-C\-Cluster\-::hits (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a6702468c4a9549ea251436da07c4ce6e}
+
+
+Returns a pointer to the hit container. 
+
+\begin{DoxyReturn}{Returns}
+The container of hits which include in the cluster. 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a45572a853771dd02eceef89ebff2736e}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!initialize@{initialize}}
+\index{initialize@{initialize}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Cluster\-::initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf i\-R\-P\-C\-Cluster} \&}]{hr, }
+\item[{{\bf i\-R\-P\-C\-Cluster} \&}]{lr}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a45572a853771dd02eceef89ebff2736e}
+
+
+Fills the cluster and calculates important parameters for cluster algorithms. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em hr} & -\/ Cluster from high radius of chamber. \\
+\hline
+\mbox{\tt in}  & {\em lr} & -\/ Cluster from low radius of chamber. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classiRPCCluster_a2754db57fbc0dd00a55e1d0a08c91409}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!last\-Strip@{last\-Strip}}
+\index{last\-Strip@{last\-Strip}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{last\-Strip}]{\setlength{\rightskip}{0pt plus 5cm}int i\-R\-P\-C\-Cluster\-::last\-Strip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a2754db57fbc0dd00a55e1d0a08c91409}
+
+
+The last (order to the map) strip of the cluster which was fired at least from one side. 
+
+\begin{DoxyReturn}{Returns}
+Last strip of the cluster according to the mapping of strips. 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a6bed3bb49e702b428970e8d87c2e67ca}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!low\-Time@{low\-Time}}
+\index{low\-Time@{low\-Time}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{low\-Time}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::low\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a6bed3bb49e702b428970e8d87c2e67ca}
+
+
+Return the average time from low radius of the chamber. 
+
+\begin{DoxyReturn}{Returns}
+$LT=\frac{1}{n}\sum_{i=1}^nlt_i=\frac{lt_1+lt_2+\cdots+lt_n}{n}$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_afa7d1bfcb0d6fd03775a6c7d2668e458}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!low\-Time\-R\-M\-S@{low\-Time\-R\-M\-S}}
+\index{low\-Time\-R\-M\-S@{low\-Time\-R\-M\-S}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{low\-Time\-R\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::low\-Time\-R\-M\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_afa7d1bfcb0d6fd03775a6c7d2668e458}
+
+
+Calculate the root means squere of time from low radius of the chamber. 
+
+\begin{DoxyReturn}{Returns}
+$LT_{RMS}=\sqrt{\frac{lt_1^2+lt_2^2+\ldots+lt_n^2}{n}}$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_af70b6a4bdbc3b7a54942d37674ec287a}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!set\-Bx@{set\-Bx}}
+\index{set\-Bx@{set\-Bx}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{set\-Bx}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Cluster\-::set\-Bx (
+\begin{DoxyParamCaption}
+\item[{int}]{bx}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_af70b6a4bdbc3b7a54942d37674ec287a}
+
+
+Set bunchx information. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em bx} & -\/ bunchx. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classiRPCCluster_aaaecb51b27bc79ce07ee51ab4d47ef26}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!x@{x}}
+\index{x@{x}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::x (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_aaaecb51b27bc79ce07ee51ab4d47ef26}
+
+
+Calculate the strip position (x). 
+
+\begin{DoxyReturn}{Returns}
+$(lstrip+fstrip)/2$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_a8f1a80aa786afa5abc5a403a2a9c4533}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!x\-D@{x\-D}}
+\index{x\-D@{x\-D}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{x\-D}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::x\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_a8f1a80aa786afa5abc5a403a2a9c4533}
+
+
+Calculate the dispersion of x position. 
+
+\begin{DoxyReturn}{Returns}
+${xD}\left[X\right]=\frac{(lstrip-fstrip)^2}{12}$ 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_affb568c6f787e806345d89b03bbebe5d}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!y@{y}}
+\index{y@{y}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::y (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_affb568c6f787e806345d89b03bbebe5d}
+
+
+Calculate the y position. 
+
+\begin{DoxyReturn}{Returns}
+Position along-\/strip (mm). 
+\end{DoxyReturn}
+\hypertarget{classiRPCCluster_ac7bed0a750f90d9176adf4a8281bca81}{\index{i\-R\-P\-C\-Cluster@{i\-R\-P\-C\-Cluster}!y\-R\-M\-S@{y\-R\-M\-S}}
+\index{y\-R\-M\-S@{y\-R\-M\-S}!iRPCCluster@{i\-R\-P\-C\-Cluster}}
+\subsubsection[{y\-R\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Cluster\-::y\-R\-M\-S (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCCluster_ac7bed0a750f90d9176adf4a8281bca81}
+
+
+Calculate the root means square (R\-M\-S) of y position. 
+
+\begin{DoxyReturn}{Returns}
+$Y_{RMS}=\sqrt{\frac{y_1^2+ y_2^2+\ldots+y_n^2}{n}}$ 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/afs/cern.\-ch/user/k/kshchabl/\-C\-M\-S\-S\-W\-\_\-10\-\_\-6\-\_\-1/src/\-Reco\-Local\-Muon/\-R\-P\-C\-Rec\-Hit/src/\hyperlink{iRPCCluster_8h}{i\-R\-P\-C\-Cluster.\-h}\item 
+/afs/cern.\-ch/user/k/kshchabl/\-C\-M\-S\-S\-W\-\_\-10\-\_\-6\-\_\-1/src/\-Reco\-Local\-Muon/\-R\-P\-C\-Rec\-Hit/src/\hyperlink{iRPCCluster_8cc}{i\-R\-P\-C\-Cluster.\-cc}\end{DoxyCompactItemize}

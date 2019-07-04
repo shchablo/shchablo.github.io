@@ -1,0 +1,214 @@
+\hypertarget{classiRPCHit}{\section{i\-R\-P\-C\-Hit Class Reference}
+\label{classiRPCHit}\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}}
+}
+
+
+This class defines a hit for improved Resistive Plate Chamber (i\-R\-P\-C).  
+
+
+
+
+{\ttfamily \#include $<$i\-R\-P\-C\-Hit.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classiRPCHit_a89aa31b62457c84dbcf04a8b6d07d572}{\hyperlink{classiRPCHit_a89aa31b62457c84dbcf04a8b6d07d572}{i\-R\-P\-C\-Hit} ()}\label{classiRPCHit_a89aa31b62457c84dbcf04a8b6d07d572}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classiRPCHit_ab92bcd09b430233e152f0e4ada34e919}{i\-R\-P\-C\-Hit} (int \hyperlink{classiRPCHit_a43474d73adf4e2a643bf04612e1ac33d}{channel}, int \hyperlink{classiRPCHit_a11730bd1b375b16e381ce08fee14609e}{strip}, float \hyperlink{classiRPCHit_ad57a1f96493e5144c03099481984260b}{time})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hyperlink{classiRPCHit_a8ba2455ac077525379c5e321487fb53d}{i\-R\-P\-C\-Hit} (int \hyperlink{classiRPCHit_a43474d73adf4e2a643bf04612e1ac33d}{channel}, int \hyperlink{classiRPCHit_a11730bd1b375b16e381ce08fee14609e}{strip}, float \hyperlink{classiRPCHit_ad57a1f96493e5144c03099481984260b}{time}, int bunchx)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\hypertarget{classiRPCHit_a6cb341fee255542709e076ad864a1de9}{\hyperlink{classiRPCHit_a6cb341fee255542709e076ad864a1de9}{$\sim$i\-R\-P\-C\-Hit} ()}\label{classiRPCHit_a6cb341fee255542709e076ad864a1de9}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+int \hyperlink{classiRPCHit_a43474d73adf4e2a643bf04612e1ac33d}{channel} ()
+\begin{DoxyCompactList}\small\item\em Return the channel number of hit. \end{DoxyCompactList}\item 
+int \hyperlink{classiRPCHit_a11730bd1b375b16e381ce08fee14609e}{strip} ()
+\begin{DoxyCompactList}\small\item\em Return the strip number of hit. \end{DoxyCompactList}\item 
+float \hyperlink{classiRPCHit_ad57a1f96493e5144c03099481984260b}{time} ()
+\begin{DoxyCompactList}\small\item\em Return the time value of hit. \end{DoxyCompactList}\item 
+void \hyperlink{classiRPCHit_a3dbe5410d52a00a15d7471a36a150151}{set\-H\-R} (bool is)
+\begin{DoxyCompactList}\small\item\em Sets marker that the hit related to the high radius. \end{DoxyCompactList}\item 
+void \hyperlink{classiRPCHit_af76d837102b4d2467b2fd8b1752e4ab8}{set\-L\-R} (bool is)
+\begin{DoxyCompactList}\small\item\em Sets marker that the hit related to the low radius. \end{DoxyCompactList}\item 
+bool \hyperlink{classiRPCHit_af9d3de68768db96f27fdc28eebaffec7}{is\-H\-R} ()
+\begin{DoxyCompactList}\small\item\em Return marker that the hit related to the high radius. \end{DoxyCompactList}\item 
+bool \hyperlink{classiRPCHit_a9f3b5d91b4a9dcb651d033ca01ac35fb}{is\-L\-R} ()
+\begin{DoxyCompactList}\small\item\em Return marker that the hit related to the low radius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines a hit for improved Resistive Plate Chamber (i\-R\-P\-C). 
+
+\begin{DoxyAuthor}{Author}
+Shchablo 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 2019 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classiRPCHit_ab92bcd09b430233e152f0e4ada34e919}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}}
+\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{i\-R\-P\-C\-Hit}]{\setlength{\rightskip}{0pt plus 5cm}i\-R\-P\-C\-Hit\-::i\-R\-P\-C\-Hit (
+\begin{DoxyParamCaption}
+\item[{int}]{channel, }
+\item[{int}]{strip, }
+\item[{float}]{time}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_ab92bcd09b430233e152f0e4ada34e919}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channels} & -\/ T\-D\-C channel. \\
+\hline
+\mbox{\tt in}  & {\em strip} & -\/ P\-C\-B strip. \\
+\hline
+\mbox{\tt in}  & {\em time} & -\/ T\-D\-C time. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classiRPCHit_a8ba2455ac077525379c5e321487fb53d}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}}
+\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{i\-R\-P\-C\-Hit}]{\setlength{\rightskip}{0pt plus 5cm}i\-R\-P\-C\-Hit\-::i\-R\-P\-C\-Hit (
+\begin{DoxyParamCaption}
+\item[{int}]{channel, }
+\item[{int}]{strip, }
+\item[{float}]{time, }
+\item[{int}]{bunchx}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_a8ba2455ac077525379c5e321487fb53d}
+
+
+Constructor. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em channels} & -\/ T\-D\-C channel. \\
+\hline
+\mbox{\tt in}  & {\em strip} & -\/ P\-C\-B strip. \\
+\hline
+\mbox{\tt in}  & {\em time} & -\/ T\-D\-C time. \\
+\hline
+\mbox{\tt in}  & {\em bunchx} & -\/ information about bunchx from digi.. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classiRPCHit_a43474d73adf4e2a643bf04612e1ac33d}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!channel@{channel}}
+\index{channel@{channel}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{channel}]{\setlength{\rightskip}{0pt plus 5cm}int i\-R\-P\-C\-Hit\-::channel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_a43474d73adf4e2a643bf04612e1ac33d}
+
+
+Return the channel number of hit. 
+
+\begin{DoxyReturn}{Returns}
+The channal number. 
+\end{DoxyReturn}
+\hypertarget{classiRPCHit_af9d3de68768db96f27fdc28eebaffec7}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!is\-H\-R@{is\-H\-R}}
+\index{is\-H\-R@{is\-H\-R}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{is\-H\-R}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Hit\-::is\-H\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_af9d3de68768db96f27fdc28eebaffec7}
+
+
+Return marker that the hit related to the high radius. 
+
+\begin{DoxyReturn}{Returns}
+\-\_\-is\-H\-R. 
+\end{DoxyReturn}
+\hypertarget{classiRPCHit_a9f3b5d91b4a9dcb651d033ca01ac35fb}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!is\-L\-R@{is\-L\-R}}
+\index{is\-L\-R@{is\-L\-R}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{is\-L\-R}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Hit\-::is\-L\-R (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_a9f3b5d91b4a9dcb651d033ca01ac35fb}
+
+
+Return marker that the hit related to the low radius. 
+
+\begin{DoxyReturn}{Returns}
+\-\_\-is\-L\-R. 
+\end{DoxyReturn}
+\hypertarget{classiRPCHit_a3dbe5410d52a00a15d7471a36a150151}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!set\-H\-R@{set\-H\-R}}
+\index{set\-H\-R@{set\-H\-R}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{set\-H\-R}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Hit\-::set\-H\-R (
+\begin{DoxyParamCaption}
+\item[{bool}]{is}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_a3dbe5410d52a00a15d7471a36a150151}
+
+
+Sets marker that the hit related to the high radius. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is} & -\/ marker (true or flase). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classiRPCHit_af76d837102b4d2467b2fd8b1752e4ab8}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!set\-L\-R@{set\-L\-R}}
+\index{set\-L\-R@{set\-L\-R}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{set\-L\-R}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Hit\-::set\-L\-R (
+\begin{DoxyParamCaption}
+\item[{bool}]{is}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_af76d837102b4d2467b2fd8b1752e4ab8}
+
+
+Sets marker that the hit related to the low radius. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is} & -\/ marker (true or flase). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classiRPCHit_a11730bd1b375b16e381ce08fee14609e}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!strip@{strip}}
+\index{strip@{strip}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{strip}]{\setlength{\rightskip}{0pt plus 5cm}int i\-R\-P\-C\-Hit\-::strip (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_a11730bd1b375b16e381ce08fee14609e}
+
+
+Return the strip number of hit. 
+
+\begin{DoxyReturn}{Returns}
+The strip number. 
+\end{DoxyReturn}
+\hypertarget{classiRPCHit_ad57a1f96493e5144c03099481984260b}{\index{i\-R\-P\-C\-Hit@{i\-R\-P\-C\-Hit}!time@{time}}
+\index{time@{time}!iRPCHit@{i\-R\-P\-C\-Hit}}
+\subsubsection[{time}]{\setlength{\rightskip}{0pt plus 5cm}float i\-R\-P\-C\-Hit\-::time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCHit_ad57a1f96493e5144c03099481984260b}
+
+
+Return the time value of hit. 
+
+\begin{DoxyReturn}{Returns}
+the time. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/afs/cern.\-ch/user/k/kshchabl/\-C\-M\-S\-S\-W\-\_\-10\-\_\-6\-\_\-1/src/\-Reco\-Local\-Muon/\-R\-P\-C\-Rec\-Hit/src/\hyperlink{iRPCHit_8h}{i\-R\-P\-C\-Hit.\-h}\item 
+/afs/cern.\-ch/user/k/kshchabl/\-C\-M\-S\-S\-W\-\_\-10\-\_\-6\-\_\-1/src/\-Reco\-Local\-Muon/\-R\-P\-C\-Rec\-Hit/src/\hyperlink{iRPCHit_8cc}{i\-R\-P\-C\-Hit.\-cc}\end{DoxyCompactItemize}

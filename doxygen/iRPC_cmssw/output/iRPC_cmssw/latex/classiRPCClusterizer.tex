@@ -1,0 +1,121 @@
+\hypertarget{classiRPCClusterizer}{\section{i\-R\-P\-C\-Clusterizer Class Reference}
+\label{classiRPCClusterizer}\index{i\-R\-P\-C\-Clusterizer@{i\-R\-P\-C\-Clusterizer}}
+}
+
+
+In this class defined functions to fulfillment clustering.  
+
+
+
+
+{\ttfamily \#include $<$i\-R\-P\-C\-Clusterizer.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classiRPCClusterizer_a21fb43e9765babca68dd245677e9e6e6}{\hyperlink{classiRPCClusterizer_a21fb43e9765babca68dd245677e9e6e6}{$\sim$i\-R\-P\-C\-Clusterizer} ()}\label{classiRPCClusterizer_a21fb43e9765babca68dd245677e9e6e6}
+
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classiRPCClusterizer_a7af579c4a8a834d52aa06c279198d36d}{clustering} (float thr\-Time, i\-R\-P\-C\-Hit\-Container \&hits, i\-R\-P\-C\-Cluster\-Container \&clusters)
+\begin{DoxyCompactList}\small\item\em The function of clustering hits from a single side of the chamber. \end{DoxyCompactList}\item 
+i\-R\-P\-C\-Cluster\-Container \hyperlink{classiRPCClusterizer_abde7fc397d9ee2ff83be54490fa65f31}{association} (bool is\-A\-N\-D, float thr\-Delta\-Min, float thr\-Delta\-Max, i\-R\-P\-C\-Cluster\-Container hr, i\-R\-P\-C\-Cluster\-Container lr)
+\begin{DoxyCompactList}\small\item\em The function of the association of clusters from high radius and low radius radius. \end{DoxyCompactList}\item 
+i\-R\-P\-C\-Cluster\-Container \hyperlink{classiRPCClusterizer_ae285bba92533f81799107e26a408e3a1}{do\-Action} (const R\-P\-C\-Digi\-Collection\-::\-Range \&digi\-Range, \hyperlink{classiRPCInfo}{i\-R\-P\-C\-Info} \&info)
+\begin{DoxyCompactList}\small\item\em The action function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+In this class defined functions to fulfillment clustering. 
+
+\begin{DoxyAuthor}{Author}
+Shchablo (I\-P\-N\-L-\/\-France) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+May 2019 
+\end{DoxyDate}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classiRPCClusterizer_abde7fc397d9ee2ff83be54490fa65f31}{\index{i\-R\-P\-C\-Clusterizer@{i\-R\-P\-C\-Clusterizer}!association@{association}}
+\index{association@{association}!iRPCClusterizer@{i\-R\-P\-C\-Clusterizer}}
+\subsubsection[{association}]{\setlength{\rightskip}{0pt plus 5cm}i\-R\-P\-C\-Cluster\-Container i\-R\-P\-C\-Clusterizer\-::association (
+\begin{DoxyParamCaption}
+\item[{bool}]{is\-A\-N\-D, }
+\item[{float}]{thr\-Delta\-Min, }
+\item[{float}]{thr\-Delta\-Max, }
+\item[{i\-R\-P\-C\-Cluster\-Container}]{hr, }
+\item[{i\-R\-P\-C\-Cluster\-Container}]{lr}
+\end{DoxyParamCaption}
+)}}\label{classiRPCClusterizer_abde7fc397d9ee2ff83be54490fa65f31}
+
+
+The function of the association of clusters from high radius and low radius radius. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is\-A\-N\-D} & -\/ if true return only associated clusters. if false associated\&single\-Side clusters. \\
+\hline
+\mbox{\tt in}  & {\em thr\-Delta\-Min} & -\/ Minimum time for difference between high and low radius. Related with the geometry of the chamber. \\
+\hline
+\mbox{\tt in}  & {\em thr\-Delta\-Max} & -\/ Maximum time for difference between high and low radius. Related with the geometry of the chamber. \\
+\hline
+\mbox{\tt in}  & {\em hr} & -\/ Container of clusters correspond high radius of the chamber. \\
+\hline
+\mbox{\tt in}  & {\em lr} & -\/ Container of clusters correspond low radius of the chamber. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Container of clusters. 
+\end{DoxyReturn}
+\hypertarget{classiRPCClusterizer_a7af579c4a8a834d52aa06c279198d36d}{\index{i\-R\-P\-C\-Clusterizer@{i\-R\-P\-C\-Clusterizer}!clustering@{clustering}}
+\index{clustering@{clustering}!iRPCClusterizer@{i\-R\-P\-C\-Clusterizer}}
+\subsubsection[{clustering}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Clusterizer\-::clustering (
+\begin{DoxyParamCaption}
+\item[{float}]{thr\-Time, }
+\item[{i\-R\-P\-C\-Hit\-Container \&}]{hits, }
+\item[{i\-R\-P\-C\-Cluster\-Container \&}]{clusters}
+\end{DoxyParamCaption}
+)}}\label{classiRPCClusterizer_a7af579c4a8a834d52aa06c279198d36d}
+
+
+The function of clustering hits from a single side of the chamber. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em thr\-Time} & -\/ The threshold for time clustering between two hits (Chain checking of hits). \\
+\hline
+\mbox{\tt out}  & {\em clusters} & -\/ Container of output clusters. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Fulfillment status. 
+\end{DoxyReturn}
+\hypertarget{classiRPCClusterizer_ae285bba92533f81799107e26a408e3a1}{\index{i\-R\-P\-C\-Clusterizer@{i\-R\-P\-C\-Clusterizer}!do\-Action@{do\-Action}}
+\index{do\-Action@{do\-Action}!iRPCClusterizer@{i\-R\-P\-C\-Clusterizer}}
+\subsubsection[{do\-Action}]{\setlength{\rightskip}{0pt plus 5cm}i\-R\-P\-C\-Cluster\-Container i\-R\-P\-C\-Clusterizer\-::do\-Action (
+\begin{DoxyParamCaption}
+\item[{const R\-P\-C\-Digi\-Collection\-::\-Range \&}]{digi\-Range, }
+\item[{{\bf i\-R\-P\-C\-Info} \&}]{info}
+\end{DoxyParamCaption}
+)}}\label{classiRPCClusterizer_ae285bba92533f81799107e26a408e3a1}
+
+
+The action function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em digi\-Range} & -\/ simulated data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Container of clusters. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+/afs/cern.\-ch/user/k/kshchabl/\-C\-M\-S\-S\-W\-\_\-10\-\_\-6\-\_\-1/src/\-Reco\-Local\-Muon/\-R\-P\-C\-Rec\-Hit/src/\hyperlink{iRPCClusterizer_8h}{i\-R\-P\-C\-Clusterizer.\-h}\item 
+/afs/cern.\-ch/user/k/kshchabl/\-C\-M\-S\-S\-W\-\_\-10\-\_\-6\-\_\-1/src/\-Reco\-Local\-Muon/\-R\-P\-C\-Rec\-Hit/src/i\-R\-P\-C\-Clusterizer.\-cc\end{DoxyCompactItemize}

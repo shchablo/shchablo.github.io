@@ -45,6 +45,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -69,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -86,7 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><p>In these documents presented the description of classes the clustering algorithm for iRPC implement for CMSSW.</p>
 <h2>How to use</h2>
 <p>``` // 1) Fill these containers from raw data. iRPCHitContainer hr, lr;</p>
-<p>// 2) Clustering for HR and LR separate. iRPCClusterContainer chr, clr; std::thread thr (&amp;iRPCClusterizer::clustering, this, info.thrTimeHR(), std::ref(hhr), std::ref(chr)); std::thread tlr (&amp;iRPCClusterizer::clustering, this, info.thrTimeLR(), std::ref(hlr), std::ref(clr));</p>
+<p>// 2) Clustering for HR and LR separate. iRPCClusterContainer chr, clr; std::thread thr (&amp;<a class="el" href="classiRPCClusterizer.html#a7af579c4a8a834d52aa06c279198d36d" title="The function of clustering hits from a single side of the chamber. ">iRPCClusterizer::clustering</a>, this, info.thrTimeHR(), std::ref(hhr), std::ref(chr)); std::thread tlr (&amp;<a class="el" href="classiRPCClusterizer.html#a7af579c4a8a834d52aa06c279198d36d" title="The function of clustering hits from a single side of the chamber. ">iRPCClusterizer::clustering</a>, this, info.thrTimeLR(), std::ref(hlr), std::ref(clr));</p>
 <p>thr.join(); tlr.join(); hlr.clear(); hhr.clear();</p>
 <p>// 3) Compute clustersi (HR) parameters. for(auto cl = chr.begin(); cl != chr.end(); ++cl) cl-&gt;compute(std::ref(info)); // 4) Compute clusters (LR) parameters. for(auto cl = clr.begin(); cl != clr.end(); ++cl) cl-&gt;compute(std::ref(info));</p>
 <p>// 5) Association between HR and LR. iRPCClusterContainer clusters = association(info.isAND(), info.thrDeltaTimeMin(), info.thrDeltaTimeMax(), chr, clr); chr.clear(); clr.clear();</p>

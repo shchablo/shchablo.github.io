@@ -4,7 +4,7 @@ In these documents presented the description of classes the clustering algorithm
 
 ``` // 1) Fill these containers from raw data. i\-R\-P\-C\-Hit\-Container hr, lr;
 
-// 2) Clustering for H\-R and L\-R separate. i\-R\-P\-C\-Cluster\-Container chr, clr; std\-::thread thr (\&i\-R\-P\-C\-Clusterizer\-::clustering, this, info.\-thr\-Time\-H\-R(), std\-::ref(hhr), std\-::ref(chr)); std\-::thread tlr (\&i\-R\-P\-C\-Clusterizer\-::clustering, this, info.\-thr\-Time\-L\-R(), std\-::ref(hlr), std\-::ref(clr));
+// 2) Clustering for H\-R and L\-R separate. i\-R\-P\-C\-Cluster\-Container chr, clr; std\-::thread thr (\&\hyperlink{classiRPCClusterizer_a7af579c4a8a834d52aa06c279198d36d}{i\-R\-P\-C\-Clusterizer\-::clustering}, this, info.\-thr\-Time\-H\-R(), std\-::ref(hhr), std\-::ref(chr)); std\-::thread tlr (\&\hyperlink{classiRPCClusterizer_a7af579c4a8a834d52aa06c279198d36d}{i\-R\-P\-C\-Clusterizer\-::clustering}, this, info.\-thr\-Time\-L\-R(), std\-::ref(hlr), std\-::ref(clr));
 
 thr.\-join(); tlr.\-join(); hlr.\-clear(); hhr.\-clear();
 
