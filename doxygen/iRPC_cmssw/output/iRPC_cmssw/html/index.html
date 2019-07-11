@@ -87,12 +87,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><p>In these documents presented the description of classes the clustering algorithm for iRPC implement for CMSSW.</p>
 <h2>How to use</h2>
-<p>``` // 1) Fill these containers from raw data. iRPCHitContainer hr, lr;</p>
-<p>// 2) Clustering for HR and LR separate. iRPCClusterContainer chr, clr; std::thread thr (&amp;<a class="el" href="classiRPCClusterizer.html#a7af579c4a8a834d52aa06c279198d36d" title="The function of clustering hits from a single side of the chamber. ">iRPCClusterizer::clustering</a>, this, info.thrTimeHR(), std::ref(hhr), std::ref(chr)); std::thread tlr (&amp;<a class="el" href="classiRPCClusterizer.html#a7af579c4a8a834d52aa06c279198d36d" title="The function of clustering hits from a single side of the chamber. ">iRPCClusterizer::clustering</a>, this, info.thrTimeLR(), std::ref(hlr), std::ref(clr));</p>
-<p>thr.join(); tlr.join(); hlr.clear(); hhr.clear();</p>
-<p>// 3) Compute clustersi (HR) parameters. for(auto cl = chr.begin(); cl != chr.end(); ++cl) cl-&gt;compute(std::ref(info)); // 4) Compute clusters (LR) parameters. for(auto cl = clr.begin(); cl != clr.end(); ++cl) cl-&gt;compute(std::ref(info));</p>
-<p>// 5) Association between HR and LR. iRPCClusterContainer clusters = association(info.isAND(), info.thrDeltaTimeMin(), info.thrDeltaTimeMax(), chr, clr); chr.clear(); clr.clear();</p>
-<p>// 6) Compute clusters parameters. for(auto cl = clusters.begin(); cl != clusters.end(); ++cl) cl-&gt;compute(std::ref(info)); ``` </p>
+<p>``` cmsrel CMSSW_10_6_1 cd CMSSW_10_6_1/src/ cmsenv git cms-init git cms-addpkg RecoLocalMuon/RPCRecHit git remote add konstantin <a href="https://github.com/shchablo/cmssw">https://github.com/shchablo/cmssw</a> git fetch konstantin git checkout konstantin/iRPC-Clustering scram b -j 8 cd RecoLocalMuon/RPCRecHit/test</p>
+<p>``` </p>
 <h2>Any questions</h2>
 <p>PhD-student, Shchablo Konstantin <br/>
  Institute of Nuclear physics of Lyon <br/>

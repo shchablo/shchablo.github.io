@@ -113,23 +113,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                       LocalPoint&amp; point,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                       LocalError&amp; error,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                       <span class="keywordtype">float</span>&amp; time, <span class="keywordtype">float</span>&amp; timeErr) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="keywordtype">bool</span> compute(<span class="keyword">const</span> RPCRoll&amp; roll,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                       <span class="keyword">const</span> <a class="code" href="classRPCCluster.html">RPCCluster</a>&amp; cluster,</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; angle,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                       <span class="keyword">const</span> GlobalPoint&amp; globPos,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                       LocalPoint&amp; point,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                       LocalError&amp; error,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       <span class="keywordtype">float</span>&amp; time, <span class="keywordtype">float</span>&amp; timeErr) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordtype">bool</span> compute(<span class="keyword">const</span> RPCRoll&amp; roll,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                               <a class="code" href="classiRPCCluster.html">iRPCCluster</a>&amp; cluster,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                               LocalPoint&amp; Point,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                               LocalError&amp; error,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                       <span class="keywordtype">float</span>&amp; time, <span class="keywordtype">float</span>&amp; timeErr) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordtype">bool</span> compute(<span class="keyword">const</span> RPCRoll&amp; roll,</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                       <span class="keyword">const</span> <a class="code" href="classRPCCluster.html">RPCCluster</a>&amp; cluster,</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                       <span class="keyword">const</span> <span class="keywordtype">float</span>&amp; angle,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                       <span class="keyword">const</span> GlobalPoint&amp; globPos,</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                       LocalPoint&amp; point,</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                       LocalError&amp; error,</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                       <span class="keywordtype">float</span>&amp; time, <span class="keywordtype">float</span>&amp; timeErr) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor"></span></div>
 <div class="ttc" id="classRPCRecHitStandardAlgo_html_a9c217d736f5afc104990d32a9ab12d26"><div class="ttname"><a href="classRPCRecHitStandardAlgo.html#a9c217d736f5afc104990d32a9ab12d26">RPCRecHitStandardAlgo::RPCRecHitStandardAlgo</a></div><div class="ttdeci">RPCRecHitStandardAlgo(const edm::ParameterSet &amp;config)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> RPCRecHitStandardAlgo.h:15</div></div>
 <div class="ttc" id="classRPCRecHitStandardAlgo_html_aca26b5e3675d5db683fe34258e4b39a8"><div class="ttname"><a href="classRPCRecHitStandardAlgo.html#aca26b5e3675d5db683fe34258e4b39a8">RPCRecHitStandardAlgo::~RPCRecHitStandardAlgo</a></div><div class="ttdeci">~RPCRecHitStandardAlgo() override</div><div class="ttdoc">Destructor. </div><div class="ttdef"><b>Definition:</b> RPCRecHitStandardAlgo.h:18</div></div>
 <div class="ttc" id="classRPCCluster_html"><div class="ttname"><a href="classRPCCluster.html">RPCCluster</a></div><div class="ttdef"><b>Definition:</b> RPCCluster.h:4</div></div>
 <div class="ttc" id="classRPCRecHitStandardAlgo_html_ae0d0524dd4f39ba36c35ac3f9247f0f5"><div class="ttname"><a href="classRPCRecHitStandardAlgo.html#ae0d0524dd4f39ba36c35ac3f9247f0f5">RPCRecHitStandardAlgo::setES</a></div><div class="ttdeci">void setES(const edm::EventSetup &amp;setup) override</div><div class="ttdoc">Pass the Event Setup to the algo at each event. </div><div class="ttdef"><b>Definition:</b> RPCRecHitStandardAlgo.h:21</div></div>
 <div class="ttc" id="classRPCRecHitStandardAlgo_html"><div class="ttname"><a href="classRPCRecHitStandardAlgo.html">RPCRecHitStandardAlgo</a></div><div class="ttdef"><b>Definition:</b> RPCRecHitStandardAlgo.h:12</div></div>
+<div class="ttc" id="classiRPCCluster_html"><div class="ttname"><a href="classiRPCCluster.html">iRPCCluster</a></div><div class="ttdoc">This class defines a cluster for improved Resistive Plate Chamber (iRPC). </div><div class="ttdef"><b>Definition:</b> iRPCCluster.h:25</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

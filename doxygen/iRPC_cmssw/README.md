@@ -3,31 +3,17 @@ In these documents presented the description of classes the clustering algorithm
 
 ## How to use
 ```	 
-  // 1) Fill these containers from raw data.
-  iRPCHitContainer hr, lr;
-  
-  // 2) Clustering for HR and LR separate.
-  iRPCClusterContainer chr, clr;
-  std::thread thr (&iRPCClusterizer::clustering, this, info.thrTimeHR(), std::ref(hhr), std::ref(chr));
-  std::thread tlr (&iRPCClusterizer::clustering, this, info.thrTimeLR(), std::ref(hlr), std::ref(clr));
-  
-  thr.join(); tlr.join();
-  hlr.clear(); hhr.clear();
-  
-  // 3) Compute clustersi (HR) parameters.
-  for(auto cl = chr.begin(); cl != chr.end(); ++cl)
-    cl->compute(std::ref(info));
-  // 4) Compute clusters (LR) parameters.
-  for(auto cl = clr.begin(); cl != clr.end(); ++cl)
-    cl->compute(std::ref(info));
+cmsrel CMSSW_10_6_1
+cd CMSSW_10_6_1/src/
+cmsenv
+git cms-init
+git cms-addpkg  RecoLocalMuon/RPCRecHit
+git remote add konstantin https://github.com/shchablo/cmssw
+git fetch konstantin
+git checkout konstantin/iRPC-Clustering
+scram b -j 8
+cd RecoLocalMuon/RPCRecHit/test
 
-  // 5) Association between HR and LR.
-  iRPCClusterContainer clusters = association(info.isAND(), info.thrDeltaTimeMin(), info.thrDeltaTimeMax(), chr, clr);
-  chr.clear(); clr.clear();
-  
-  // 6) Compute clusters parameters.
-  for(auto cl = clusters.begin(); cl != clusters.end(); ++cl)
-    cl->compute(std::ref(info));
 ```
 ## Any questions
 PhD-student, Shchablo Konstantin <br> 

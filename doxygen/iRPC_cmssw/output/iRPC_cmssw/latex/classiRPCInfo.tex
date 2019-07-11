@@ -49,13 +49,13 @@ float \hyperlink{classiRPCInfo_af88bf411e22cfa4088b175dc0462c6be}{speed} ()
 \hypertarget{classiRPCInfo_aa13ce2c293d20669c7672e2ca31e77ec}{void \hyperlink{classiRPCInfo_aa13ce2c293d20669c7672e2ca31e77ec}{set\-Speed} (float \-\_\-speed)}\label{classiRPCInfo_aa13ce2c293d20669c7672e2ca31e77ec}
 
 \begin{DoxyCompactList}\small\item\em Set the speed of light in a strip. \mbox{[}in\mbox{]} \-\_\-speed. \end{DoxyCompactList}\item 
-bool \hyperlink{classiRPCInfo_a7f1003565aae261c6cf435c84883c053}{is\-A\-N\-D} ()
+bool \hyperlink{classiRPCInfo_a1489a6d0d33c5aeda19133910ff76f60}{is\-Return\-Only\-A\-N\-D} ()
 \begin{DoxyCompactList}\small\item\em Get type of output clusters. If true -\/ only associated clusters. If false -\/ associated\&single\-Side clusters. \end{DoxyCompactList}\item 
-void \hyperlink{classiRPCInfo_aa01c91ada2a3d349b72fbabf1f96b920}{is\-A\-N\-D} (bool is)
+void \hyperlink{classiRPCInfo_a2a7db44337819ac3ccb6790c9c4156b3}{is\-Return\-Only\-A\-N\-D} (bool is)
 \begin{DoxyCompactList}\small\item\em Set type of output clusters. If true -\/ only associated clusters. If false -\/ associated\&single\-Side clusters. \end{DoxyCompactList}\item 
-bool \hyperlink{classiRPCInfo_ac8bc3677fea31aa951d43037baf517d5}{is\-Use} ()
+bool \hyperlink{classiRPCInfo_a4cca07cee2a8d029a081c027a186b159}{is\-Use\-I\-R\-P\-C\-Algorithm} ()
 \begin{DoxyCompactList}\small\item\em Return true if need to use i\-R\-P\-C algorithm. \end{DoxyCompactList}\item 
-void \hyperlink{classiRPCInfo_a533f0c121e355975133b8e46d87166cd}{is\-Use} (bool is)
+void \hyperlink{classiRPCInfo_a222b4a3789086727845749f80bb58347}{is\-Use\-I\-R\-P\-C\-Algorithm} (bool is)
 \begin{DoxyCompactList}\small\item\em Set true if need to use i\-R\-P\-C algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -102,36 +102,6 @@ Get dependency map between the low radius and T\-D\-C channels.
 \begin{DoxyReturn}{Returns}
 map -\/ std\-::map$<$channel, strip$>$. 
 \end{DoxyReturn}
-\hypertarget{classiRPCInfo_a7f1003565aae261c6cf435c84883c053}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-A\-N\-D@{is\-A\-N\-D}}
-\index{is\-A\-N\-D@{is\-A\-N\-D}!iRPCInfo@{i\-R\-P\-C\-Info}}
-\subsubsection[{is\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Info\-::is\-A\-N\-D (
-\begin{DoxyParamCaption}
-{}
-\end{DoxyParamCaption}
-)}}\label{classiRPCInfo_a7f1003565aae261c6cf435c84883c053}
-
-
-Get type of output clusters. If true -\/ only associated clusters. If false -\/ associated\&single\-Side clusters. 
-
-\begin{DoxyReturn}{Returns}
-\-\_\-is\-A\-N\-D. 
-\end{DoxyReturn}
-\hypertarget{classiRPCInfo_aa01c91ada2a3d349b72fbabf1f96b920}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-A\-N\-D@{is\-A\-N\-D}}
-\index{is\-A\-N\-D@{is\-A\-N\-D}!iRPCInfo@{i\-R\-P\-C\-Info}}
-\subsubsection[{is\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Info\-::is\-A\-N\-D (
-\begin{DoxyParamCaption}
-\item[{bool}]{is}
-\end{DoxyParamCaption}
-)}}\label{classiRPCInfo_aa01c91ada2a3d349b72fbabf1f96b920}
-
-
-Set type of output clusters. If true -\/ only associated clusters. If false -\/ associated\&single\-Side clusters. 
-
-
-\begin{DoxyParams}[1]{Parameters}
-\mbox{\tt in}  & {\em is} & -\/ true or false.. \\
-\hline
-\end{DoxyParams}
 \hypertarget{classiRPCInfo_aa5dd5259557be3ea2e5763cf25d1a1c1}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-H\-R@{is\-H\-R}}
 \index{is\-H\-R@{is\-H\-R}!iRPCInfo@{i\-R\-P\-C\-Info}}
 \subsubsection[{is\-H\-R}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Info\-::is\-H\-R (
@@ -168,13 +138,43 @@ Checking that T\-D\-C channel related to the low radius.
  \begin{DoxyReturn}{Returns}
 True if the channel is connected to low radius. 
 \end{DoxyReturn}
-\hypertarget{classiRPCInfo_ac8bc3677fea31aa951d43037baf517d5}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-Use@{is\-Use}}
-\index{is\-Use@{is\-Use}!iRPCInfo@{i\-R\-P\-C\-Info}}
-\subsubsection[{is\-Use}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Info\-::is\-Use (
+\hypertarget{classiRPCInfo_a1489a6d0d33c5aeda19133910ff76f60}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-Return\-Only\-A\-N\-D@{is\-Return\-Only\-A\-N\-D}}
+\index{is\-Return\-Only\-A\-N\-D@{is\-Return\-Only\-A\-N\-D}!iRPCInfo@{i\-R\-P\-C\-Info}}
+\subsubsection[{is\-Return\-Only\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Info\-::is\-Return\-Only\-A\-N\-D (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
-)}}\label{classiRPCInfo_ac8bc3677fea31aa951d43037baf517d5}
+)}}\label{classiRPCInfo_a1489a6d0d33c5aeda19133910ff76f60}
+
+
+Get type of output clusters. If true -\/ only associated clusters. If false -\/ associated\&single\-Side clusters. 
+
+\begin{DoxyReturn}{Returns}
+\-\_\-is\-A\-N\-D. 
+\end{DoxyReturn}
+\hypertarget{classiRPCInfo_a2a7db44337819ac3ccb6790c9c4156b3}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-Return\-Only\-A\-N\-D@{is\-Return\-Only\-A\-N\-D}}
+\index{is\-Return\-Only\-A\-N\-D@{is\-Return\-Only\-A\-N\-D}!iRPCInfo@{i\-R\-P\-C\-Info}}
+\subsubsection[{is\-Return\-Only\-A\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Info\-::is\-Return\-Only\-A\-N\-D (
+\begin{DoxyParamCaption}
+\item[{bool}]{is}
+\end{DoxyParamCaption}
+)}}\label{classiRPCInfo_a2a7db44337819ac3ccb6790c9c4156b3}
+
+
+Set type of output clusters. If true -\/ only associated clusters. If false -\/ associated\&single\-Side clusters. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em is} & -\/ true or false.. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classiRPCInfo_a4cca07cee2a8d029a081c027a186b159}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-Use\-I\-R\-P\-C\-Algorithm@{is\-Use\-I\-R\-P\-C\-Algorithm}}
+\index{is\-Use\-I\-R\-P\-C\-Algorithm@{is\-Use\-I\-R\-P\-C\-Algorithm}!iRPCInfo@{i\-R\-P\-C\-Info}}
+\subsubsection[{is\-Use\-I\-R\-P\-C\-Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}bool i\-R\-P\-C\-Info\-::is\-Use\-I\-R\-P\-C\-Algorithm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classiRPCInfo_a4cca07cee2a8d029a081c027a186b159}
 
 
 Return true if need to use i\-R\-P\-C algorithm. 
@@ -182,13 +182,13 @@ Return true if need to use i\-R\-P\-C algorithm.
 \begin{DoxyReturn}{Returns}
 \-\_\-is\-Use. 
 \end{DoxyReturn}
-\hypertarget{classiRPCInfo_a533f0c121e355975133b8e46d87166cd}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-Use@{is\-Use}}
-\index{is\-Use@{is\-Use}!iRPCInfo@{i\-R\-P\-C\-Info}}
-\subsubsection[{is\-Use}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Info\-::is\-Use (
+\hypertarget{classiRPCInfo_a222b4a3789086727845749f80bb58347}{\index{i\-R\-P\-C\-Info@{i\-R\-P\-C\-Info}!is\-Use\-I\-R\-P\-C\-Algorithm@{is\-Use\-I\-R\-P\-C\-Algorithm}}
+\index{is\-Use\-I\-R\-P\-C\-Algorithm@{is\-Use\-I\-R\-P\-C\-Algorithm}!iRPCInfo@{i\-R\-P\-C\-Info}}
+\subsubsection[{is\-Use\-I\-R\-P\-C\-Algorithm}]{\setlength{\rightskip}{0pt plus 5cm}void i\-R\-P\-C\-Info\-::is\-Use\-I\-R\-P\-C\-Algorithm (
 \begin{DoxyParamCaption}
 \item[{bool}]{is}
 \end{DoxyParamCaption}
-)}}\label{classiRPCInfo_a533f0c121e355975133b8e46d87166cd}
+)}}\label{classiRPCInfo_a222b4a3789086727845749f80bb58347}
 
 
 Set true if need to use i\-R\-P\-C algorithm. 

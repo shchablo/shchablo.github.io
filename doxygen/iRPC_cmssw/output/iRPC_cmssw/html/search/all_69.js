@@ -14,8 +14,8 @@ var searchData=
   ['irpcinfo',['iRPCInfo',['../classiRPCInfo.html',1,'']]],
   ['irpcinfo_2ecc',['iRPCInfo.cc',['../iRPCInfo_8cc.html',1,'']]],
   ['irpcinfo_2eh',['iRPCInfo.h',['../iRPCInfo_8h.html',1,'']]],
-  ['isand',['isAND',['../classiRPCInfo.html#a7f1003565aae261c6cf435c84883c053',1,'iRPCInfo::isAND()'],['../classiRPCInfo.html#aa01c91ada2a3d349b72fbabf1f96b920',1,'iRPCInfo::isAND(bool is)']]],
   ['ishr',['isHR',['../classiRPCHit.html#af9d3de68768db96f27fdc28eebaffec7',1,'iRPCHit::isHR()'],['../classiRPCInfo.html#aa5dd5259557be3ea2e5763cf25d1a1c1',1,'iRPCInfo::isHR()']]],
   ['islr',['isLR',['../classiRPCHit.html#a9f3b5d91b4a9dcb651d033ca01ac35fb',1,'iRPCHit::isLR()'],['../classiRPCInfo.html#adecf8620f55445dd1d4c5bc8c2039fc8',1,'iRPCInfo::isLR()']]],
-  ['isuse',['isUse',['../classiRPCInfo.html#ac8bc3677fea31aa951d43037baf517d5',1,'iRPCInfo::isUse()'],['../classiRPCInfo.html#a533f0c121e355975133b8e46d87166cd',1,'iRPCInfo::isUse(bool is)']]]
+  ['isreturnonlyand',['isReturnOnlyAND',['../classiRPCInfo.html#a1489a6d0d33c5aeda19133910ff76f60',1,'iRPCInfo::isReturnOnlyAND()'],['../classiRPCInfo.html#a2a7db44337819ac3ccb6790c9c4156b3',1,'iRPCInfo::isReturnOnlyAND(bool is)']]],
+  ['isuseirpcalgorithm',['isUseIRPCAlgorithm',['../classiRPCInfo.html#a4cca07cee2a8d029a081c027a186b159',1,'iRPCInfo::isUseIRPCAlgorithm()'],['../classiRPCInfo.html#a222b4a3789086727845749f80bb58347',1,'iRPCInfo::isUseIRPCAlgorithm(bool is)']]]
 ];
